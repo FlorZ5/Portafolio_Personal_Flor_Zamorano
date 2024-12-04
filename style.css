@@ -94,8 +94,8 @@
   }
   
   .hero-imagen-desarrollador {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
     margin: 20px;
   }
   
@@ -122,7 +122,7 @@
   }
   
   .sobre-mi .seccion-texto {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 15px;
     word-wrap: break-word; /* Envuelve palabras largas */
@@ -195,44 +195,102 @@
     margin-bottom: 40px;
   }
   
-  .overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  
   .proyecto {
     position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding: 0;
+    height: auto;
   }
-  
-  .proyecto:hover img {
-    opacity: 0.2;
+
+  .proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
   }
-  
-  .proyecto:hover .overlay {
-    opacity: 1;
-  }
-  
-  .overlay .iconos-contenedor {
+
+  .proyecto-info {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1; /* Asegura que el texto quede encima de la imagen */
+    display: none;
   }
   
-  .overlay i {
-    color: black;
-    font-size: 60px;
-    margin: 10px;
+  .proyecto-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .proyecto-info .seccion-descripcion{
+    font-size: 0.9rem;
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Estilo de los iconos */
+.proyecto-info .iconos-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.proyecto-info .iconos-contenedor a {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
+}
+
+.proyecto-info .iconos-contenedor a:hover {
+  color: #000000; /* Cambia el color al pasar el cursor */
+}
+
+/* Carrusel de imágenes */
+.proyecto-detalle {
+  display: none;
+}
+
+.proyecto:hover .proyecto-detalle {
+  display: block;
+}
+
+.proyecto:hover .proyecto-info {
+  display: block;
+}
+
+.proyecto:hover img {
+  opacity: 1; /* Reducir ligeramente la opacidad de la imagen para mostrar mejor el texto */
+}
+
+.proyecto:hover .portada {
+  opacity: 0.2; /* Reducir ligeramente la opacidad de la imagen para mostrar mejor el texto */
+}
+
+  .proyecto-detalle {
+    padding: 0px;
+    display: none; /* Ocultar por defecto */
   }
   
+  .proyecto:hover .proyecto-detalle {
+    display: block; /* Mostrar cuando el mouse pase sobre el proyecto */
+  }
+
+  .carousel-inner .carousel-item img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Puedes ajustar la altura según tus necesidades */
+    object-fit: contain; /* Hace que las imágenes se ajusten al tamaño sin distorsionarse */
+}
+
   /* Articulos */
   
   .articulos {
@@ -414,6 +472,69 @@
     padding: 20px;
   }
   
+  .aptitudes {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .aptitudes .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .columna {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .columna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .columna h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .columna ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .columna ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .columna p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
   /* Adaptable (Responsivo) */
   
   @media screen and (max-width: 400px) {
@@ -463,3 +584,29 @@
       max-width: 600px;
     }
   }
+
+  @media (max-width: 768px) {
+    .proyecto-info {
+        top: 1.5%; /* Ajusta la posición para pantallas más pequeñas */
+    }
+    
+    .proyecto-info h3 {
+        font-size: 1.2rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+
+    .proyecto-info .seccion-descripcion {
+        font-size: 0.9rem; /* Reduce el tamaño de la descripción */
+        margin-bottom: 0;
+    }
+
+    .proyecto-info .iconos-contenedor i {
+        font-size: 25px; /* Reduce el tamaño de los iconos */
+    }
+}
+
+
+@media (max-width: 768px) {
+  .aptitudes .container {
+    grid-template-columns: 1fr;
+  }
+}
