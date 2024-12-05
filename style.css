@@ -89,7 +89,7 @@
     text-align: justify;
   }
   
-  .btn-info {
+  .btn {
     font-size: 1.2rem;
     margin-top: 50px;
     background-color:#A91B60;
@@ -97,7 +97,13 @@
     border:2px solid #A91B60;
     font-family: 'Quicksand', sans-serif;
   }
-  
+  .btn:hover{
+    font-size: 1.3rem;
+    margin: 20px;
+    background-color: #d73684;
+    color: #ffffff;
+    border:2px solid #d73684;
+  }
   
   .texto-negro {
     color: #5F093D;
