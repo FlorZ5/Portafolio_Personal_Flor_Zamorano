@@ -4,11 +4,11 @@
     <!-- Metadatos -->
     <meta charset="utf-8">
     <meta name="author" content="Flor Zamorano">
-    <meta name="description" content="Portafolio de desarrollo web de Flor Zamorano">
+    <meta name="description" content="Portafolio de desarrollo de Flor Guadalupe Llamas Zamorano">
     <meta name="keywords" content="HTML, CSS, JavaScript, React">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Titulo -->
-    <title>Flor Llamas</title>
+    <title>Flor Zamorano</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
     <!-- Bootstrap -->
@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
   </head>
   <body>
     <!-- Barra de navegacion -->
@@ -35,7 +36,7 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#proyectos">Proyectos</a>
@@ -54,16 +55,13 @@
     <!-- Seccion Hero -->
     <section class="hero align-items-stretch">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Yo3.jpg" alt="Foto de Flor Zamorano">
+        <img class="hero-imagen-desarrollador rounded-circle img-fluid" src="imagenes/Yo3.jpg" alt="Foto de Flor Zamorano">
         <h1>Hola, soy Flor Guadalupe Llamas Zamorano</h1>
         <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
 
         <!--Animación con JavaScript-->
         <h2 class="text-primary mb-4" id="typewriter"></h2>
       </div>
-      <!--<div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="imagenes/Wavy_Bus-20_Single-04.jpg" alt="Chica desarrolladora.">
-      </div>-->
     </section>
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
@@ -84,7 +82,7 @@
         <div class="row">
           <!-- Desarrollo Web -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop" style="color: white; background-color:#d1819b;"></i>
+            <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Desarrollo Web</p>
             <p>Dentro de mi experiencia como desarrolladora, he llevado a cabo proyectos de elaboración de sitios web publicitarios y aplicaciones web para la administración de negocios y puntos de venta, integrando dentro de las aplicaciones APIS y bases de datos para una mejor funcionalidad.</p>
             <div class="badges-contenedor">
@@ -97,7 +95,7 @@
           </div>
           <!-- BD -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"  style="color: white; background-color:#d1819b;"></i>
+            <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Manejo de Bases de Datos</p>
             <p>Cuento con conocimiento y experiencia en el manejo y administración de Bases de datos SQL y NoSQL, así como el uso de sus respectivos Sistemas Gestores de Bases de Datos. De igual forma, sé implementar diversas funciones para optimizar el flujo de datos y garantizar un correcto manejo de transacciones. </p>
             <div class="badges-contenedor">
@@ -111,7 +109,7 @@
           </div>
           <!-- Apps -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop" style="color: white; background-color:#d1819b;"></i>
+            <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Desarrollo de aplicaciones</p>
             <p>He desarrollado aplicaciones multiplataforma mediante el uso de Apache Cordova y destinadas al entretenimiento. Así mismo, he construido aplicaciones moviles con el uso de Flutter y Dart, para cuidado de mascotas. Además, lleve a cabo la codificación de una aplicaciones de escritorio para Windows.</p>
             <div class="badges-contenedor">
@@ -126,7 +124,7 @@
           </div>
            <!-- ICP -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop" style="color: white; background-color:#d1819b;"></i>
+            <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">ICP</p>
             <p>He construido APIs con el framework Azle, para la administración de una paqueteria. Mediante el uso de Motoko desarrollé el Bakend de un par de aplicaciones, una destinada al manejo de libros y otra dedicada a un sistema de pedidos pipas de agua, misma que fue consumida por React.js y con la que mi equipo y yo participamos en el Hackaton Hidrotechs, donde se obtuvo el tercer lugar en nuestra vertical.</p>
             <div class="badges-contenedor">
@@ -137,7 +135,7 @@
           </div>  
             <!-- APIS -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop" style="color: white; background-color:#d1819b;"></i>
+            <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">API REST</p>
             <p>Cuento con experiencia en la codificación de API REST, mediante la arquitectura MVC y con JavaScript, integrandolas con Bases de datos SQL, como XAMPP y No SQL, como lo es MongoDB. Dichas APIs, han sido puntos de venta, admimstración de usuarios, administración de negocios e información, implementando en ellas seguridad y logs, para el rastreo de acciones.</p>
             <div class="badges-contenedor">
@@ -149,21 +147,20 @@
           </div>  
           <!-- Documentación -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop" style="color: white; background-color:#d1819b;"></i>
+            <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Documentación</p>
-            <p>Tengo experiencia en documentación de proyectos, he documentado gran variedad de proyectos, segurando que la información sea clara y de ayuda para otros desarrolladores, usuarios y para dueños de proyectos. Así mismo he realizado manuales para desarrolladores, que ayudaron a que el trabajo realizado fuera entendible y se pudiera dar continuidad.</p>
+            <p>Tengo experiencia en documentación de proyectos, he documentado gran variedad de  elloss, asegurando que la información sea clara y de ayuda para otros desarrolladores, usuarios y para dueños de proyectos. Así mismo he realizado manuales para desarrolladores, que ayudaron a que el trabajo realizado fuera entendible y se pudiera dar continuidad.</p>
             <div class="badges-contenedor">
               <span class="badge">Documentación</span>
-              <span class="badge">Manual de desarrollador</span>
-              <span class="badge">Manual de usuario</span>
-              <span class="badge">información de proyecto</span>
+              <span class="badge">Manuales</span>
+              <span class="badge">Información</span>
             </div>
           </div> 
         </div>
       </div>
     </section>
 
-    <section class="aptitudes">
+    <section class="aptitudes" style="background-color: #5F093D;">
       <div class="container">
         <!-- Columna 1: Aptitudes -->
         <div class="columna">
@@ -194,7 +191,7 @@
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
       <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
-      <h3 class="seccion-descripcion">Estos son algunos proyectos que he desarrollado</h3>
+      <h3 class="descripción-seccion">Estos son algunos proyectos que he desarrollado</h3>
       <!-- Galeria de Proyectos -->
       <div class="container text-center proyectos-contenedor">
         <div class="row">
@@ -651,17 +648,19 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-12 col-lg-12">
       <a href="https://github.com/FlorZ5" target="_blank" rel="noopener noreferrer">
         <button type="button" class="btn btn-info">
           Ver más proyectos
           <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
       </a>
+    </div>
     </section>    
     <!-- Certificaciones -->
     <section id="certificaciones" class="proyectos-recientes seccion-clara d-flex flex-column">
       <h2 class="seccion-titulo texto-negro">Mis certificaciones y constancias</h2>
-      <h3 class="seccion-descripcion">Estas son algunas certificaciones y constancias con las que cuento</h3>
+      <h3 class="descripcion-seccion">Estas son algunas certificaciones y constancias con las que cuento</h3>
       <!-- Galeria de certificaciones -->
       <div class="container text-center proyectos-contenedor">
         <div class="row">
@@ -703,7 +702,7 @@
         <div class="container text-center rectangulo d-flex justify-content-evenly">
           <div class="row">
             <div class="col-12 col-md-4 seccion-titulo">
-              ¡Hablemos!
+              <h1 class="hablemos">¡Hablemos!</h1>
             </div>
             <div class="col-12 col-md-4 descripcion">
               Contáctame para iniciar tu proyecto de desarrollo y haré que tu visión se vuelva realidad.
@@ -742,13 +741,13 @@
           <i class="bi bi-envelope"></i>
         </a>
       </div>
-      <div class="derechos-de-autor">Creado por Flor Zamorano (2024) &#169;</div>
+      <div class="derechos-de-autor d-flex flex-column align-items-center justify-content-center">Creado por Flor Zamorano (2024) &#169;</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="main.js"></script>
-
+        <script src="./script.js"></script>
   </body>
 </html>
