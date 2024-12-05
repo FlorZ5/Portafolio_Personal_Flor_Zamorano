@@ -97,13 +97,7 @@
     border:2px solid #A91B60;
     font-family: 'Quicksand', sans-serif;
   }
-  .btn-info:hover{
-    font-size: 1.3rem;
-    margin: 20px;
-    background-color: #d73684;
-    color: #ffffff;
-    border:2px solid #d73684;
-  }
+  
   
   .texto-negro {
     color: #5F093D;

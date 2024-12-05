@@ -61,6 +61,7 @@ urlsToCache = [
     './imagenes/proyecto17_2.jpg',
     './imagenes/proyecto17_3.jpg',
     './imagenes/proyecto17_4.jpg',
+    './imagenes/Yo3.jpg',
     './style.css'
 ];
 
